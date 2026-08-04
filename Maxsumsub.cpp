@@ -7,17 +7,17 @@ int crossingsum(vector<int> lefthalf, vector<int> righthalf)
     int leftsum = INT_MIN;
     int rightsum = INT_MIN;
 
-    // Left part (right to left)
+    
     for(int i = lefthalf.size() - 1; i >= 0; i--)
     {
         sum += lefthalf[i];
         leftsum = max(leftsum, sum);
     }
 
-    // Reset sum
+
     sum = 0;
 
-    // Right part (left to right)
+    
     for(int i = 0; i < righthalf.size(); i++)
     {
         sum += righthalf[i];
