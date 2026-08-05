@@ -23,6 +23,7 @@ int sumdivisibleby7(int arr[], int left, int right)
     int mid = left + (right - left) / 2;
 
     int leftPart =  sumdivisibleby7(arr, left, mid);
+    
     int rightPart =  sumdivisibleby7(arr, mid + 1, right);
 
     return leftPart + rightPart;
